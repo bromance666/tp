@@ -1,10 +1,13 @@
 {
   "scripts": {
-    "dev": "vitepress dev docs --open",
+    "dev:docs": "vitepress dev docs --open",
+    "dev:vue": "cd ./docs/demo && yarn dev",
     "build": "vitepress build docs",
+    "dev": "concurrently \"yarn dev:docs\" \"yarn dev:vue\"",
     "serve": "vitepress serve docs"
   },
   "devDependencies": {
+    "concurrently": "^6.2.0",
     "vitepress": "^0.15.5"
   }
 }
