@@ -1,9 +1,9 @@
 # 直接展示的vue项目文件
 
 <script setup>
-  import App from './demo/src/App.vue'
+  import TpButton from './demo/src/views/button/index.vue'
 </script>
-<App />
+<TpButton />
 
 
 
