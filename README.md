@@ -13,7 +13,6 @@
 
 
 #### 根目录运行`yarn dev`同时启动`vitepress`文档以及`vite`项目
-**终端不会同时输出vite以及vuepress的地址，直接网页访问 http://localhost:8080 和 http://localhost:3000 即可**  
 
 ```sh
 # 根目录
