@@ -1,13 +1,23 @@
 {
   "scripts": {
-    "dev:docs": "vitepress dev docs --open",
-    "dev:vue": "cd ./docs/demo && yarn dev",
+    "dev:docs": "vuepress dev docs",
+    "dev:vue": "vite",
     "build": "vitepress build docs",
     "dev": "concurrently \"yarn dev:docs\" \"yarn dev:vue\"",
     "serve": "vitepress serve docs"
   },
-  "devDependencies": {
+  "dependencies": {
     "concurrently": "^6.2.0",
-    "vitepress": "^0.15.5"
+    "vue": "^3.0.11"
+  },
+  "devDependencies": {
+    "@types/node": "^16.0.0",
+    "@vitejs/plugin-vue": "^1.2.4",
+    "@vue/compiler-sfc": "^3.0.5",
+    "typescript": "^4.3.2",
+    "vite": "^2.4.0",
+    "vue-tsc": "^0.0.24",
+    "vuepress": "^2.0.0-beta.21",
+    "vuepress-vite": "^2.0.0-beta.21"
   }
 }
