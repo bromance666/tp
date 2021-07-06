@@ -4,13 +4,19 @@
     "dev:vue": "vite",
     "build": "vitepress build docs",
     "dev": "concurrently -r \"yarn dev:docs\" \"yarn dev:vue\"",
-    "serve": "vitepress serve docs"
+    "serve": "vitepress serve docs",
+    "lint:style": "stylelint --fix \"src/**/*.less\" --syntax less",
+    "lint:prettier": "prettier --check \"src/**/*\"",
+    "lint:eslint": "eslint --ext .js,.ts,.vue ./src",
+    "lint:fix": "eslint --fix --ext src/**/*.{vue,less,css} ./src",
+    "prettier": "prettier -c --write \"src/**/*\""
   },
   "dependencies": {
     "concurrently": "^6.2.0",
     "vue": "^3.0.11"
   },
   "devDependencies": {
+    "@tsword/linter": "^1.0.3",
     "@types/node": "^16.0.0",
     "@vitejs/plugin-vue": "^1.2.4",
     "@vue/compiler-sfc": "^3.0.5",

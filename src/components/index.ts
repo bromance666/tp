@@ -1,5 +1,3 @@
-import TpButton from "./button/button"
+import TpButton from './button/button';
 
-export {
-  TpButton
-}
+export { TpButton };
