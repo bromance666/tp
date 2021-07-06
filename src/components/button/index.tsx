@@ -1,7 +1,7 @@
 import { computed, defineComponent, PropType } from 'vue'
 // import { TpButtonProps } from '@/types/button'
 import { TpButtonProps } from '../../types/button'
-import '@/lib/css/color.styl'
+import '../../lib/css/color.styl'
 const SIZE_CLASS = {
   normal: 'normal',
   small: 'small',
