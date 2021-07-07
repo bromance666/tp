@@ -9,8 +9,9 @@
 <script lang="ts">
   import { defineComponent } from 'vue';
   import TpButton from '@comps/button/index';
-  import style from "index.less"
-  conosle.log(style)
+  import style from 'index.less';
+  conosle.log(style);
+
   export default defineComponent({
     name: 'App',
     components: {
@@ -20,11 +21,11 @@
 </script>
 
 <style lang="stylus">
-#app
-  font-family: Avenir, Helvetica, Arial, sans-serif
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
-  text-align: center
-  color: #2c3e50
-  margin-top: 60px
+  #app
+    font-family: Avenir, Helvetica, Arial, sans-serif
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    text-align: center
+    color: #2c3e50
+    margin-top: 60px
 </style>
