@@ -10,10 +10,23 @@
   import { defineComponent } from 'vue';
   import TpButton from '@comps/button/index';
   import style from 'index.less';
+  let s: number;
+  s = '123';
+  function a(): void {
+    return 1123;
+  }
+  a();
   export default defineComponent({
     name: 'App',
     components: {
       TpButton,
+    },
+    methods: {
+      test() {
+        let s: number;
+        s = '123';
+        return s;
+      },
     },
   });
 </script>
