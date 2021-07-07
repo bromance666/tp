@@ -34,7 +34,7 @@
     "src/**/*.less": "stylelint --syntax less --fix",
     "src/**/*.{js,jsx,ts,tsx,vue}": "eslint --ext .js,.jsx,.ts,.tsx,.vue",
     "src/**/*.{js,jsx,tsx,ts,less,md,json,vue}": [
-      "prettier --write"
+      "prettier -c --write"
     ]
   },
   "husky": {
