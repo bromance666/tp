@@ -3,3 +3,5 @@
 /config
 .history
 *.d.ts
+/lib
+/es

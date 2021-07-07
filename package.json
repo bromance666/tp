@@ -1,17 +1,30 @@
 {
+  "files": [
+    "es",
+    "lib"
+  ],
+  "sideEffects": [
+    "es/**/style/*",
+    "lib/**/style/*",
+    "*.less"
+  ],
+  "main": "lib/index.js",
+  "module": "es/index.js",
   "scripts": {
     "dev:docs": "vuepress dev docs",
     "dev:vue": "vite",
     "build": "vitepress build docs",
+    "compile": "father-build",
     "dev": "concurrently -r \"yarn dev:docs\" \"yarn dev:vue\"",
     "serve": "vitepress serve docs",
-    "lint:style": "stylelint --fix \"src/**/*.less\" --syntax less",
-    "lint:prettier": "prettier --check \"src/**/*\"",
-    "lint:eslint": "eslint --ext .js,.ts,.vue ./src",
-    "lint:fix": "eslint --fix --ext src/**/*.{vue,less,css} ./src",
+    "lint:style": "stylelint --fix \"example/**/*.less\" --syntax less",
+    "lint:prettier": "prettier --check \"example/**/*\"",
+    "lint:eslint": "eslint --ext .js,.ts,.vue ./example",
+    "lint:fix": "eslint --fix --ext example/**/*.{vue,less,css} ./example",
     "prettier": "prettier -c --write \"src/**/*\"",
-    "tsc": "tsc --noEmit",
-    "precommit": "lint-staged && npm run tsc"
+    "tsc:noemit": "vue-tsc --noEmit",
+    "tsc": "vue-tsc",
+    "precommit": "npm run lint:eslint && npm run lint:style && npm run lint:prettier && lint-staged && npm run tsc:noemit"
   },
   "dependencies": {
     "concurrently": "^6.2.0",
@@ -23,6 +36,8 @@
     "@vitejs/plugin-vue": "^1.2.4",
     "@vue/compiler-sfc": "^3.0.5",
     "husky": "4.3.0",
+    "less": "^4.1.1",
+    "less-loader": "^10.0.1",
     "lint-staged": "^10.5.2",
     "stylus": "^0.54.8",
     "typescript": "^4.3.2",
@@ -32,9 +47,9 @@
     "vuepress-vite": "^2.0.0-beta.21"
   },
   "lint-staged": {
-    "src/**/*.less": "stylelint --syntax less --fix",
-    "src/**/*.{js,jsx,ts,tsx,vue}": "eslint --ext .js,.jsx,.ts,.tsx,.vue",
-    "src/**/*.{js,jsx,tsx,ts,less,md,json,vue}": [
+    "packages/**/*.less": "stylelint --syntax less --fix",
+    "packages/**/*.{js,jsx,ts,tsx}": "eslint --ext .js,.jsx,.ts,.tsx,.vue",
+    "packages/**/*.{js,jsx,tsx,ts,less,md,json}": [
       "prettier -c --write"
     ]
   },

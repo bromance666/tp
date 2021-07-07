@@ -15,7 +15,14 @@
 // }
 {
   "compilerOptions": {
-    "outDir": "build/dist",
+    // "outDir": "build/dist",
+    // "baseUrl": "./",
+    "paths": {
+      "@": ["./example"],
+      "@comps/*": ["./example/components/*"]
+    },
+    
+    "outDir": "lib",
     "module": "ESNext",
     "declaration": true,
     "noImplicitAny": false,
@@ -31,7 +38,5 @@
     ],
     "allowSyntheticDefaultImports": true
   },
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules", "lib", "es", "build", "dist", "scripts", "jest"]
  }
