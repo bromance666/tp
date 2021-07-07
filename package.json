@@ -10,6 +10,7 @@
     "lint:eslint": "eslint --ext .js,.ts,.vue ./src",
     "lint:fix": "eslint --fix --ext src/**/*.{vue,less,css} ./src",
     "prettier": "prettier -c --write \"src/**/*\"",
+    "tsc": "tsc --noEmit",
     "precommit": "lint-staged"
   },
   "dependencies": {
