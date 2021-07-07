@@ -7,17 +7,17 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import TpButton from '@comps/button/index';
-import style from 'index.less';
+  import { defineComponent } from 'vue';
+  import TpButton from '@comps/button/index';
+  import style from 'index.less';
 
-export default defineComponent({
-  name: 'App',
-  components: {
-    TpButton,
-  },
-  methods: {},
-});
+  export default defineComponent({
+    name: 'App',
+    components: {
+      TpButton,
+    },
+    methods: {},
+  });
 </script>
 
 <style lang="less">
