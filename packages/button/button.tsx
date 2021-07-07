@@ -11,8 +11,8 @@ const TYPE_CLASS = {
   plain: 'plain',
   primary: 'primary',
 };
-const TpButton = defineComponent({
-  name: 'TpButton',
+const TpButtonPlugin = defineComponent({
+  name: 'TpButtonPlugin',
   props: {
     size: {
       type: String as PropType<TpButtonProps['size']>,
@@ -36,4 +36,4 @@ const TpButton = defineComponent({
   },
 });
 
-export default TpButton;
+export default TpButtonPlugin;

@@ -1,7 +1,7 @@
-import TpButton from './button';
+import TpButtonPlugin from './button';
 
-export const Button = {
+export const TpButton = {
   install: (instance: any) => {
-    instance.component(TpButton.name, TpButton);
+    instance.component(TpButtonPlugin.name, TpButtonPlugin);
   },
 };
