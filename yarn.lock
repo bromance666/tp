@@ -286,10 +286,10 @@
     remark "^13.0.0"
     unist-util-find-all-after "^3.0.2"
 
-"@tsword/linter@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@tsword/linter/-/linter-1.0.4.tgz#74af66c3c2814c6c47049d0593d91f1fe35cafde"
-  integrity sha512-qCcCU/0eROGow+v/tm9yKIPoSDVWBnpqqyNEukrqCilQfcl8KDw76g0NcS/acWDqeVzBU6TnMjXL+srWNDRyPA==
+"@tsword/linter@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@tsword/linter/-/linter-1.0.5.tgz#9ef9ce4968b27e35c98676e14af3121ccc6a9dc7"
+  integrity sha512-VfHD1fADs66cu4CiJ4DW5dE/iYkjgcE0borDaNG3lx5UyKRXiiUfFjw98TTUEqKTLE8ndmboerpgm92O3sGKhQ==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^4.28.1"
     "@typescript-eslint/parser" "^4.28.1"
