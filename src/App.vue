@@ -10,6 +10,7 @@
   import { defineComponent } from 'vue';
   import TpButton from '@comps/button/index';
   import style from "index.less"
+  conosle.log(style)
   export default defineComponent({
     name: 'App',
     components: {
