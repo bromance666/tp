@@ -1,4 +1,7 @@
 {
+  "name": "@tsword/tp",
+  "version": "1.0.0",
+  "license": "MIT",
   "files": [
     "es",
     "lib"
@@ -12,9 +15,9 @@
   "module": "es/index.js",
   "scripts": {
     "dev:docs": "vuepress dev docs",
-    "dev:vue": "vite",
+    "dev:vue": "cross-env NODE_ENV=dev vite",
+    "build:comp": "cross-env NODE_ENV=production && rimraf lib && vite build",
     "build": "vitepress build docs",
-    "compile": "father-build",
     "dev": "concurrently -r \"yarn dev:docs\" \"yarn dev:vue\"",
     "serve": "vitepress serve docs",
     "lint:style": "stylelint --fix \"example/**/*.less\" --syntax less",
@@ -30,15 +33,15 @@
     "vue": "^3.0.11"
   },
   "devDependencies": {
-    "@tsword/linter": "^1.0.3",
+    "@tsword/linter": "^1.0.4",
     "@types/node": "^16.0.0",
     "@vitejs/plugin-vue": "^1.2.4",
     "@vue/compiler-sfc": "^3.0.5",
+    "cross-env": "^7.0.3",
     "husky": "4.3.0",
     "less": "^4.1.1",
     "less-loader": "^10.0.1",
     "lint-staged": "^10.5.2",
-    "stylus": "^0.54.8",
     "typescript": "^4.3.2",
     "vite": "^2.4.0",
     "vue-tsc": "^0.0.24",
