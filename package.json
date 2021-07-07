@@ -22,9 +22,8 @@
     "lint:eslint": "eslint --ext .js,.ts,.vue ./example",
     "lint:fix": "eslint --fix --ext example/**/*.{vue,less,css} ./example",
     "prettier": "prettier -c --write \"src/**/*\"",
-    "tsc:noemit": "vue-tsc --noEmit",
-    "tsc": "vue-tsc",
-    "precommit": "npm run lint:eslint && npm run lint:style && npm run lint:prettier && lint-staged && npm run tsc:noemit"
+    "tsc": "vue-tsc --noEmit",
+    "precommit": "npm run lint:eslint && npm run lint:style && npm run lint:prettier && lint-staged && npm run tsc"
   },
   "dependencies": {
     "concurrently": "^6.2.0",
@@ -48,7 +47,7 @@
   },
   "lint-staged": {
     "packages/**/*.less": "stylelint --syntax less --fix",
-    "packages/**/*.{js,jsx,ts,tsx}": "eslint --ext .js,.jsx,.ts,.tsx,.vue",
+    "packages/**/*.{js,jsx,ts,tsx}": "eslint --ext .js,.jsx,.ts,.tsx,",
     "packages/**/*.{js,jsx,tsx,ts,less,md,json}": [
       "prettier -c --write"
     ]
