@@ -7,25 +7,26 @@
 </template>
 
 <script lang="ts">
-  import { defineComponent } from 'vue';
-  import TpButton from '@comps/button/index';
-  import style from 'index.less';
+import { defineComponent } from 'vue';
+import TpButton from '@comps/button/index';
+import style from 'index.less';
 
-  export default defineComponent({
-    name: 'App',
-    components: {
-      TpButton,
-    },
-    methods: {},
-  });
+export default defineComponent({
+  name: 'App',
+  components: {
+    TpButton,
+  },
+  methods: {},
+});
 </script>
 
-<style lang="stylus">
-  #app
-    font-family: Avenir, Helvetica, Arial, sans-serif
-    -webkit-font-smoothing: antialiased
-    -moz-osx-font-smoothing: grayscale
-    text-align: center
-    color: #2c3e50
-    margin-top: 60px
+<style lang="less">
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
 </style>
