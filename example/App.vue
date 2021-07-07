@@ -16,9 +16,7 @@
     components: {
       TpButton,
     },
-    methods: {
-      
-    },
+    methods: {},
   });
 </script>
 

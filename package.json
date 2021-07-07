@@ -18,7 +18,7 @@
     "dev": "concurrently -r \"yarn dev:docs\" \"yarn dev:vue\"",
     "serve": "vitepress serve docs",
     "lint:style": "stylelint --fix \"example/**/*.less\" --syntax less",
-    "lint:prettier": "prettier --check \"example/**/*\"",
+    "lint:prettier": "prettier --write \"example/**/*\"",
     "lint:eslint": "eslint --ext .js,.ts,.vue ./example",
     "lint:fix": "eslint --fix --ext example/**/*.{vue,less,css} ./example",
     "prettier": "prettier -c --write \"src/**/*\"",
