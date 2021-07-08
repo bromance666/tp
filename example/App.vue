@@ -8,7 +8,7 @@
 
 <script lang="ts">
   import { defineComponent } from 'vue';
-  import TpButton from '@comps/button/index';
+  import TpButton from '@comps/button';
 
   import style from 'index.less';
 
