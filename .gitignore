@@ -9,3 +9,4 @@ yarn.lock
 .history
 lib
 es
+.idea

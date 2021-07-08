@@ -18,7 +18,7 @@ export default {
           esModule: true,
           exports: 'named',
           sanitizeFileName(info) {
-            console.log(info)
+            // console.log(info)
             return info
           },
           entryFileNames(info) {

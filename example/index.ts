@@ -1,6 +1,6 @@
 /* eslint-disable */
-import * as components from './components/index';
-// import * as components from '../lib/src';
+import * as components from '../example';
+// import '../lib/style.css';
 
 export default {
   install: (instance: any) => {
