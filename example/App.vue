@@ -1,21 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <TpButton>normal</TpButton>
+  <img alt="Vue logo" src="./assets/favicon.ico" />
+  <!-- <TpButton>normal</TpButton> -->
+  <tp-button>normal</tp-button>
+
   <view style="margin-left: 20px">
-    <TpButton type="primary">primary</TpButton>
+    <tp-button type="primary">primary</tp-button>
+    <!-- <TpButton type="primary">primary</TpButton> -->
   </view>
 </template>
 
 <script lang="ts">
   import { defineComponent } from 'vue';
-  import TpButton from '@comps/button';
+  // import TpButton from '@comps/button';
 
+  // import('../lib/tp.es.js').then(res => console.log(res))
   import style from 'index.less';
-
   export default defineComponent({
     name: 'App',
     components: {
-      TpButton,
+      // TpButton,
     },
     methods: {},
   });

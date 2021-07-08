@@ -12,7 +12,7 @@ const TYPE_CLASS = {
   primary: 'primary',
 };
 const TpButtonPlugin = defineComponent({
-  name: 'TpButtonPlugin',
+  name: 'TpButton',
   props: {
     size: {
       type: String as PropType<TpButtonProps['size']>,

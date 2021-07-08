@@ -5,5 +5,6 @@ export default {
             '@': resolve(__dirname, '../example'),
             '@comps': resolve(__dirname, '../example/components'),
         },
+        // extensions: ['.tsx', '.ts', '.js', '.css']
     }
   }

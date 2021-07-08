@@ -15,7 +15,7 @@
   "module": "es/index.js",
   "scripts": {
     "dev:docs": "vuepress dev docs",
-    "dev:vue": "cross-env NODE_ENV=dev vite",
+    "dev:vue": "npm run build:comp && cross-env NODE_ENV=dev vite",
     "build:comp": "cross-env NODE_ENV=production && rimraf lib && vite build",
     "build": "vitepress build docs",
     "dev": "concurrently -r \"yarn dev:docs\" \"yarn dev:vue\"",
