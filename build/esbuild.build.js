@@ -24,8 +24,6 @@ const transformPlugin = {
     })
 
     build.onEnd(result => {
-      // shell.mv('lib/taro-ui-vue3/index.js', 'lib/index.js')
-      // shell.rm('-rf', 'lib/taro-ui-vue3')
       shell.cp('-R', 'packages/types', 'types')
       shell.rm('-f', 'types/package.json')
     })
@@ -37,7 +35,7 @@ async function* walk(dir) {
     const entry = path.join(dir, d.name);
     if (
       d.isDirectory() &&
-      !['__tests__', '__mocks__', 'styles', 'types', 'test-utils', 'node_modules'].includes(d.name)
+      ![ 'styles', 'types' ].includes(d.name)
     ) yield* await walk(entry);
     else if (
       d.isFile() && d.name !== 'package.json'
