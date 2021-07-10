@@ -5,3 +5,6 @@ export const ButtonPlugin = {
     instance.component(TpButton.name, TpButton);
   },
 };
+
+export default TpButton
+// export default ButtonPlugin
