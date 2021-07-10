@@ -1,5 +1,5 @@
 /* eslint-disable */
-import * as components from '../lib/tp.es';
+import * as components from '../lib/';
 import '../lib/style.css';
 
 export default {
