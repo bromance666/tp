@@ -17,6 +17,8 @@ input.index = './packages';
  * build:BuildOptions.commonjsOptions.extensions
  */
 export default {
+  // root: './packages/index.ts',
+  // BuildOptions
   build: {
     outDir: 'lib',
     // assetsDir: '',
