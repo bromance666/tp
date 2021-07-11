@@ -1,9 +1,11 @@
 <template>
   <img alt="Vue logo" src="./assets/favicon.ico" />
   <tp-button>normal</tp-button>
-  <view style="margin-left: 20px">
+  <div style="margin-left: 20px">
     <tp-button type="primary">primary</tp-button>
-  </view>
+  </div>
+  <div class="cmp-item"><tp-switch></tp-switch></div>
+  <div class="cmp-item"><tp-switch disabled></tp-switch></div>
 </template>
 
 <script lang="ts">
@@ -24,5 +26,8 @@
     text-align: center;
     color: #2c3e50;
     margin-top: 60px;
+  }
+  .cmp-item {
+    margin-top: 20px;
   }
 </style>
