@@ -1,7 +1,7 @@
 import { computed, defineComponent, PropType } from 'vue';
-import { TpButtonProps } from '../types/button';
-// import '../../lib/css/color.styl'
-import '../styles/button-test.less';
+import { TpButtonProps } from '../../types/button';
+import '../../styles/button-test';
+
 const SIZE_CLASS = {
   normal: 'normal',
   small: 'small',
@@ -12,7 +12,7 @@ const TYPE_CLASS = {
   primary: 'primary',
 };
 const TpButtonTestPlugin = defineComponent({
-  name: 'TpButtonTestPlugin',
+  name: 'TpButtonTest',
   props: {
     size: {
       type: String as PropType<TpButtonProps['size']>,

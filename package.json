@@ -3,16 +3,13 @@
   "version": "1.0.0",
   "license": "MIT",
   "files": [
-    "es",
-    "lib"
+    "es"
   ],
   "sideEffects": [
-    "es/**/style/*",
     "lib/**/style/*",
     "*.less"
   ],
   "main": "lib/index.js",
-  "module": "es/index.js",
   "scripts": {
     "dev:docs": "vuepress dev docs",
     "dev:vue": "npm run build:comp && cross-env NODE_ENV=dev vite",
@@ -42,7 +39,7 @@
     "husky": "4.3.0",
     "less": "^4.1.1",
     "less-loader": "^10.0.1",
-    "lint-staged": "^10.5.2",
+    "lint-staged": "^11.0.0",
     "memory-fs": "^0.5.0",
     "rollup": "^1.0.0",
     "rollup-plugin-typescript2": "^0.30.0",
