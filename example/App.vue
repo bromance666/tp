@@ -1,10 +1,8 @@
 <template>
   <img alt="Vue logo" src="./assets/favicon.ico" />
   <tp-button>normal</tp-button>
-  <tp-button-test>normal-test</tp-button-test>
   <view style="margin-left: 20px">
     <tp-button type="primary">primary</tp-button>
-    <tp-button-test type="primary">primary-test</tp-button-test>
   </view>
 </template>
 
