@@ -47,7 +47,8 @@ build({
   target: ['es6'],
   // 排除依赖项中不进行打包的插件
   external: [
-    'vue'
+    'vue',
+    '@tsword/button'
   ],
   /** 替换变量，用字符串文字替换某些内容，请记住传递给 esbuild 的替换值本身必须包含引号 */
   define: {

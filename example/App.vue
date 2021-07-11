@@ -8,14 +8,14 @@
 
 <script lang="ts">
   import { defineComponent } from 'vue';
-  import TpButton from '@comps/button/index';
+  // import TpButton from '@comps/button/index';
   import style from 'index.less';
 
   export default defineComponent({
     name: 'App',
-    components: {
-      TpButton,
-    },
+    // components: {
+    //   TpButton,
+    // },
     methods: {},
   });
 </script>

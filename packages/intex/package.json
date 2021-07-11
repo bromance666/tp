@@ -1,0 +1,8 @@
+{
+  "name": "tsword",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "dependencies": {
+    "@tsword/button": "^0.0.0"
+  }
+}
