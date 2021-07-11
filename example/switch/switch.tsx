@@ -1,6 +1,6 @@
 import { defineComponent, PropType, ref } from 'vue';
 import { ITpSwitchProps } from './type';
-import './style.less'
+import './style.less';
 
 const TpSwitchPlugin = defineComponent({
   name: 'TpSwitch',
@@ -35,7 +35,7 @@ const TpSwitchPlugin = defineComponent({
       default: '开启',
     },
     unCheckedChildren: {
-      type:  [String, Object],
+      type: [String, Object],
       default: '关闭',
     },
     activeColor: {
@@ -48,33 +48,47 @@ const TpSwitchPlugin = defineComponent({
     },
     change: {
       type: Function,
-      default: () => void(0),
+      default: () => void 0,
     },
     focus: {
       type: Function,
-      default: () => void(0),
+      default: () => void 0,
     },
     blur: {
       type: Function,
-      default: () => void(0),
-    }
+      default: () => void 0,
+    },
   },
 
   setup(props) {
     // @ts-ignore
-    const { loading, disabled, size, vModel, activeText, inactiveText, checkedChildren, unCheckedChildren, activeColor, inactiveColor, change, focus, blur} = props
+    const {
+      loading,
+      disabled,
+      size,
+      vModel,
+      activeText,
+      inactiveText,
+      checkedChildren,
+      unCheckedChildren,
+      activeColor,
+      inactiveColor,
+      change,
+      focus,
+      blur,
+    } = props;
     const isActive = ref(true);
     const handleChangeSwitch = () => {
-      if(disabled) return;
+      if (disabled) return;
       isActive.value = !isActive.value;
       change && change(isActive.value);
-    }
+    };
     return () => (
-      <button 
+      <button
         class={`
           tp-switch 
           ${isActive.value ? 'tp-switch-checked' : ''} 
-          ${disabled ? 'tp-switch-disabled':''}
+          ${disabled ? 'tp-switch-disabled' : ''}
         `}
         onClick={handleChangeSwitch}
       >

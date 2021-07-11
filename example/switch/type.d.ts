@@ -5,7 +5,7 @@ export interface ITpSwitchProps {
   disabled?: boolean; //是否禁用
   size?: string; // 尺寸
   vModel?: string; //绑定值
-  activeText?: string;  //打开时的文字描述
+  activeText?: string; //打开时的文字描述
   inactiveText?: string;
   checkedChildren?: string | Component; // 打开时的开关内容
   unCheckedChildren?: string | Component;

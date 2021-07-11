@@ -3,7 +3,7 @@ import App from './App.vue';
 import { TpButton } from '../lib';
 import '../lib/style/button.css';
 
-import { TpSwitch } from './switch'
+import { TpSwitch } from './switch';
 
 const app = createApp(App);
 
