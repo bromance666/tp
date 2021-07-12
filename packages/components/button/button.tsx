@@ -32,7 +32,9 @@ const TpButtonPlugin = defineComponent({
       'tp-button': true,
     }));
     // console.log(rootClasses.value)
-    return () => <button class={rootClasses.value}>{slots}</button>;
+    return () => (
+      <button class={rootClasses.value}>{slots.default ? slots.default() : '按钮'}</button>
+    );
   },
 });
 
