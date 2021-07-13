@@ -1,6 +1,5 @@
 /* eslint-disable */
 import * as components from '../lib';
-import '../lib/style/button.css';
 
 export default {
   install: (instance: any) => {

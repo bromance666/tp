@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 const routes = [
-  { path: '/', component: () => import('../App.vue') },
-  { path: '/button', component: () => import('../views/button/index') },
+  // { path: '/', component: () => import('../App.vue') },
+  { path: '/', component: () => import('../views/button/index') },
 ];
 
 const router = createRouter({

@@ -2,7 +2,7 @@ import { createApp } from 'vue';
 import App from './App.vue';
 // import { TpButtonTest, TpButton } from '../lib';
 import components from './index';
-import '../lib/style/button.css';
+import '../lib/style/index.css';
 import router from './router/index';
 const app = createApp(App);
 app.use(router);

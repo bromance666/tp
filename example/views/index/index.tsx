@@ -12,12 +12,13 @@ const ButtonView = defineComponent({
     const scopedSlots = {};
 
     return () => (
-      <div class="display-flex flex-direction">
-        {/* {val.value}
-        <input type="text" v-model={val.value} placeholder={val.value} /> */}
+      <div>
+        {val.value}
+        <input type="text" v-model={val.value} placeholder={val.value} />
+        {/* <TpButton v-slots={{
+            default: (n: string) => <span>这是按钮</span>,
+          }}></TpButton> */}
         <TpButton>这是按钮</TpButton>
-        <br></br>
-        <TpButton type="primary">这是按钮</TpButton>
       </div>
     );
   },
