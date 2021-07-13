@@ -6,8 +6,6 @@ import devConfig from './env/vite.dev'
 import proConfig from './env/vite.prod'
 const envConfig = process.env.NODE_ENV === 'dev' ? devConfig : proConfig
 
-// console.log(envConfig)
-
 const finnalConfig: Partial<UserConfigExport> = {
   plugins: [vueJsx ({
     transformOn: true

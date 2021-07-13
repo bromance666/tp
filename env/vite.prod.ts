@@ -16,6 +16,7 @@ input.index = './packages';
 /**
  * build:BuildOptions.commonjsOptions.extensions
  */
+// eslint-disable-next-line no-console
 export default {
   // root: './packages/index.ts',
   // BuildOptions
@@ -41,8 +42,8 @@ export default {
           // format: 'es',
           // 资源文件
           assetFileNames(info){
-            // console.log(info)
-            return `style/${info.name}`
+            // return `style/${info.name}`
+            return `style/index.css`
           },
           // 每个入口文件(每个组件入口及index.ts)输出名字设置
           entryFileNames(info) {
