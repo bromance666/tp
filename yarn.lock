@@ -2511,7 +2511,7 @@ esbuild@^0.11.19:
   resolved "https://registry.nlark.com/esbuild/download/esbuild-0.11.23.tgz#c42534f632e165120671d64db67883634333b4b8"
   integrity sha1-xCU09jLhZRIGcdZNtniDY0MztLg=
 
-esbuild@^0.12.14, esbuild@^0.12.8:
+esbuild@^0.12.14, esbuild@^0.12.15, esbuild@^0.12.8:
   version "0.12.15"
   resolved "https://registry.nlark.com/esbuild/download/esbuild-0.12.15.tgz#9d99cf39aeb2188265c5983e983e236829f08af0"
   integrity sha1-nZnPOa6yGIJlxZg+mD4jaCnwivA=
