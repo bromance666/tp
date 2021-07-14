@@ -11,11 +11,6 @@ export interface TpButtonProps {
    */
   type?: 'plain' | 'primary';
   /**
-   * 按钮是否有圆角
-   * @default false
-   */
-  circle?: boolean;
-  /**
    * 按钮载入状态
    * @default false
    */

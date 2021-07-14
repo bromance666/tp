@@ -1,8 +1,6 @@
 import { computed, defineComponent, PropType } from 'vue';
 import { TpButtonProps } from '../../types/button';
-// import '../../lib/css/color.styl'
-// import '../../styles/button';
-import '../../styles/index.less';
+
 const SIZE_CLASS = {
   normal: 'normal',
   small: 'small',
@@ -25,16 +23,28 @@ const TpButtonPlugin = defineComponent({
       default: 'plain',
       validator: (prop: string) => ['plain', 'primary'].includes(prop),
     },
+    circle: Boolean,
+    loading: Boolean,
   },
   setup(props: TpButtonProps, { slots }) {
     const rootClasses = computed(() => ({
       [`tp-button__${props.size}`]: SIZE_CLASS[props.size!],
       [`tp-button__${props.type}`]: TYPE_CLASS[props.type!],
       'tp-button': true,
+      'tp-button__circle': props.circle,
+      'tp-button__icon': props.loading,
     }));
     // console.log(rootClasses.value)
     return () => (
-      <button class={rootClasses.value}>{slots.default ? slots.default() : '按钮'}</button>
+      <button class={rootClasses.value}>
+        {props.loading}
+        {props.loading ? (
+          <div class="tp-loading">
+            <div class="tp-loading__ring"></div>
+          </div>
+        ) : null}
+        {slots.default ? slots.default() : '按钮'}
+      </button>
     );
   },
 });
