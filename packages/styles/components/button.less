@@ -18,8 +18,8 @@
   border: 1px solid transparent;
   transform: translate(0, 0);
   &__normal {
-    height: 35px;
-    line-height: 35px;
+    height: 32px;
+    line-height: 32px;
   }
   &__small {
     height: 25px;
@@ -36,5 +36,14 @@
   &__primary {
     color: #fff;
     background-color: @color-primary;
+  }
+  &__circle {
+    border-radius: 50px;
+  }
+  &__icon {
+    .tp-loading {
+      display: inline-block;
+      margin-right: 10px;
+    }
   }
 }
