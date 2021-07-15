@@ -19,19 +19,58 @@ const ButtonView = defineComponent({
           <div>按钮种类：</div>
           <TpButton>plain</TpButton>
           <TpButton type="primary">primary</TpButton>
-          <TpButton type="primary" circle>
-            circle
-          </TpButton>
-          <TpButton type="primary" loading>
-            loading
-          </TpButton>
         </div>
         <div class="m-10">
           <div>按钮大小：</div>
           <TpButton size="small">small</TpButton>
+          <TpButton size="small" type="primary">
+            small
+          </TpButton>
           <TpButton size="normal">nromal</TpButton>
+          <TpButton size="normal" type="primary">
+            nromal
+          </TpButton>
           <TpButton size="large" type="primary">
             large
+          </TpButton>
+        </div>
+        <div class="m-10">
+          <div>圆角按钮：</div>
+          <TpButton size="small" circle>
+            small
+          </TpButton>
+          <TpButton size="normal" circle>
+            nromal
+          </TpButton>
+          <TpButton size="large" type="primary" circle>
+            large
+          </TpButton>
+        </div>
+        <div class="m-10">
+          <div>加载按钮：</div>
+          <TpButton size="small" loading>
+            small
+          </TpButton>
+          <TpButton size="small" circle loading>
+            small
+          </TpButton>
+          <TpButton size="normal" loading>
+            nromal
+          </TpButton>
+          <TpButton size="large" type="primary" loading>
+            primary
+          </TpButton>
+        </div>
+        <div class="m-10">
+          <div>禁用按钮：</div>
+          <TpButton size="small" loading disabled>
+            small
+          </TpButton>
+          <TpButton size="normal" disabled>
+            nromal
+          </TpButton>
+          <TpButton size="large" type="primary" disabled>
+            primary
           </TpButton>
         </div>
       </div>

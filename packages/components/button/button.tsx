@@ -25,18 +25,19 @@ const TpButtonPlugin = defineComponent({
     },
     circle: Boolean,
     loading: Boolean,
+    disabled: Boolean
   },
   setup(props: TpButtonProps, { slots }) {
     const rootClasses = computed(() => ({
+      'tp-button': true,
       [`tp-button__${props.size}`]: SIZE_CLASS[props.size!],
       [`tp-button__${props.type}`]: TYPE_CLASS[props.type!],
-      'tp-button': true,
       'tp-button__circle': props.circle,
       'tp-button__icon': props.loading,
+      'tp-button__disabled': props.disabled
     }));
-    // console.log(rootClasses.value)
     return () => (
-      <button class={rootClasses.value}>
+      <button class={rootClasses.value} disabled={props.disabled}>
         {props.loading}
         {props.loading ? (
           <div class="tp-loading">
