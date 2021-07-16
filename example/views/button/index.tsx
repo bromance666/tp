@@ -4,13 +4,9 @@ import { defineComponent, getCurrentInstance, ref, ComponentInternalInstance } f
 const ButtonView = defineComponent({
   name: 'ButtonView',
   props: {},
-  setup(props) {
+  setup() {
     const instance = getCurrentInstance();
     const TpButton: any = instance.appContext.components.TpButton;
-    const ButtonX = TpButton as any;
-    const val = ref('12312321');
-    const scopedSlots = {};
-
     return () => (
       <div class="flex-column">
         {/* {val.value}
